@@ -23,7 +23,5 @@ ENV DATA_DIR=/data
 ENV PORT=3000
 EXPOSE 3000
 
-# /data is where the SQLite file + jwt secret persist — mount a volume here
-VOLUME ["/data"]
 
 CMD ["node", "server/index.js"]
